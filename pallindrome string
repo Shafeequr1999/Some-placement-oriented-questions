@@ -1,0 +1,17 @@
+#include<iostream>
+#include<bits/stdc++.h>
+using namespace std;
+string ispallindrome(string s){
+    string p=s;
+    reverse(p.begin(),p.end());
+    if(s==p){
+        return "pallindrome";
+    }
+    else{
+        return "not pallindrome";
+    }
+}
+int main(){
+    string s="aba";
+    cout<<ispallindrome(s);
+}
